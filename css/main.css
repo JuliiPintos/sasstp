@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(/img/encabezado.JPG);
+  border-bottom: 4px #36383A solid; }
+  .encabezado .h1Title {
+    display: flex;
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+    padding: 20px 0px 25px 0px;
+    align-items: center;
+    color: #36383A;
+    animation: infinite; }
+  .encabezado .logo {
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 15px; }
+  .encabezado .menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 30px 0px 15px 0px; }
+  .encabezado ul a {
+    margin: 0px 30px 0px 30px;
+    background-color: #36383A;
+    border: 2px #36383A solid;
+    padding: 5px 20px 5px 20px;
+    color: #EE7A67;
+    font-family: 'Akshar', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px; }
+
+ul a:hover {
+  background: whitesmoke;
+  transition: 1s; }
+
+section {
+  color: #36383A;
+  background-image: linear-gradient(to left, whitesmoke, #d5ffeb); }
+  section #sobreNosotrosT, section #productosT {
+    padding: 40px 0px 100px 50px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 3em; }
+  section .sobreNosotrosP {
+    font-family: 'Akshar', sans-serif;
+    display: flex;
+    font-size: 1.25em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 50%; }
+  section .showroomimg {
+    padding: 40px 0px 50px 120px;
+    width: 600px; }
+
+p:hover {
+  border-left: 10px #36383A solid;
+  transition: 1s; }
+
+.showroomimg:hover {
+  transform: scale(1.1);
+  transition: 2s; }
+
+@media (max-width: 700px) {
+  .encabezado {
+    flex-direction: column; }
+  .menu, .h2Title {
+    display: flex;
+    justify-content: center; } }
+
+@media (max-width: 914px) {
+  .encabezado {
+    flex-direction: column; }
+  .menu, .h2Title {
+    display: flex;
+    justify-content: center; }
+  section {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center; }
+  .showroomimg {
+    padding: 70px 0px 70px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footerinfo {
+    font-size: 0.8em; } }
+
+@media (max-width: 1200px) {
+  .zapato1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .zapato2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #productosT {
+    text-align: center;
+    align-items: center; } }
+
+@media (max-width: 1200px) {
+  .zapato1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; } }
+
+footer {
+  background-color: #36383A;
+  font-family: 'Ubuntu', sans-serif;
+  color: white; }
+  footer .footerc {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    padding: 20px 0px 20px 0px; }
+  footer .footerinfo {
+    display: flex;
+    flex-direction: column; }
+  footer .footerinfo span {
+    padding-top: 20px;
+    margin-left: 20px; }
+  footer .derechos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-top: 1px solid black; }
+
+.footerinfo span:hover {
+  font-size: 1.1em;
+  color: aquamarine;
+  transition: 1s;
+  cursor: pointer; }
+
+.productos {
+  border-top: 4px solid #36383A;
+  padding-bottom: 400px; }
+  .productos #productosT {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%; }
+  .productos .zapato1 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    border-bottom: 4px solid #36383A; }
+    .productos .zapato1 .z1 {
+      background-color: #36383A;
+      padding: 20px 20px 100px 20px;
+      color: whitesmoke;
+      font-family: 'Ubuntu', sans-serif; }
+      .productos .zapato1 .z1 .z1 img {
+        height: 300px; }
+      .productos .zapato1 .z1 a {
+        color: whitesmoke;
+        text-decoration: none; }
+  .productos .zapato2 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px; }
+    .productos .zapato2 .z2 {
+      background-color: #36383A;
+      padding: 20px 20px 100px 20px;
+      color: whitesmoke;
+      font-family: 'Ubuntu', sans-serif; }
+      .productos .zapato2 .z2 a {
+        color: whitesmoke;
+        text-decoration: none; }
+      .productos .zapato2 .z2 img {
+        height: 300px; }
+
+.z1 a:hover {
+  color: #a1a1a1;
+  transition: 1s; }
+
+.z2 a:hover {
+  color: #a1a1a1;
+  transition: 1s; }

@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import "utilities/variables";
+
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(/img/encabezado.JPG);
+    border-bottom:4px #36383A solid;
+    .h1Title{
+        display: flex;
+        font-family: 'Cookie', cursive;
+        font-size: 30px;
+        padding: 20px 0px 25px 0px;
+        align-items: center;
+        color: $color-negro-comun;
+        animation: infinite;
+    }
+    .logo{
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 15px;
+    }
+    .menu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 30px 0px 15px 0px;
+    }
+    ul a{
+    margin: 0px 30px 0px 30px;
+    background-color:$color-negro-comun;
+    border:2px $color-negro-comun solid;
+    padding: 5px 20px 5px 20px;
+    color: $color-naranja-comun;
+    font-family: 'Akshar', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    }
+}
+ul a:hover{
+    background: $color-blanco-comun ;
+    transition: 1s;
+}
+
+
+section{
+    color: $color-negro-comun;
+    background-image: linear-gradient(to left,$color-blanco-comun, $color-celeste-comun);
+    #sobreNosotrosT, #productosT{
+        padding: 40px 0px 100px 50px;
+        font-family: 'Akshar', sans-serif;
+        font-size: 3em;
+    }
+    .sobreNosotrosP{
+        font-family: 'Akshar', sans-serif;
+        display: flex;
+        font-size: 1.25em;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 50%;
+    }
+    .showroomimg{
+    padding: 40px 0px 50px 120px;
+    width: 600px;
+}
+}
+p:hover{
+    border-left: 10px $color-negro-comun solid;
+    transition: 1s;
+}
+
+.showroomimg:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+@media (max-width:700px){
+    .encabezado{
+        flex-direction: column;
+    }
+    .menu, .h2Title{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:914px){
+    .encabezado{
+        flex-direction: column;
+    }
+    .menu, .h2Title{
+        display: flex;
+        justify-content: center;
+    }
+    section{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .showroomimg{
+        padding: 70px 0px 70px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerinfo{
+        font-size: 0.8em;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .zapato1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .zapato2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #productosT{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px){
+    .zapato1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+footer{
+    background-color: $color-negro-comun;    
+    font-family: 'Ubuntu', sans-serif;    
+    color: rgb(255, 255, 255);
+    .footerc{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1em;
+        padding: 20px 0px 20px 0px;
+    }
+    .footerinfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerinfo span{
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+    .derechos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        border-top: 1px solid black;
+    }
+}
+
+.footerinfo span:hover{
+    font-size: 1.1em;
+    color: aquamarine;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.productos{
+    border-top: 4px solid $color-negro-comun;
+    padding-bottom: 400px;
+    #productosT{
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+    }
+    .zapato1{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 100px;
+        border-bottom: 4px solid $color-negro-comun;
+        .z1{
+            background-color: $color-negro-comun;
+            padding: 20px 20px 100px 20px;
+            color: $color-blanco-comun;
+            font-family: 'Ubuntu', sans-serif;
+            .z1 img{
+                height: 300px;
+            }
+            a{
+                color: $color-blanco-comun;
+                text-decoration: none;
+            }
+        }
+    }
+    .zapato2{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 200px;
+        .z2{
+            background-color: $color-negro-comun;
+            padding: 20px 20px 100px 20px;
+            color: $color-blanco-comun;
+            font-family: 'Ubuntu', sans-serif;
+            a{
+                color: $color-blanco-comun;
+                text-decoration: none;
+            }
+            img{
+                height: 300px;
+            }
+        }
+    }
+}
+
+.z1 a:hover{
+    color: rgb(161, 161, 161);
+    transition: 1s;
+}
+
+.z2 a:hover{
+    color: rgb(161, 161, 161);
+    transition: 1s;
+}
